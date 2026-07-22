@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EventHub | Premium Event Ticket Booking</title>
+
+    <meta name="description"
+          content="Premium Event Ticket Booking Website built using HTML, CSS and JavaScript">
+
+    <meta name="keywords"
+          content="event booking,movie tickets,concert,sports,eventhub">
+
+    <meta name="author"
+          content="Amit Kumar">
+
+    <meta name="theme-color"
+          content="#2563eb">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+    <!--========== PRELOADER ==========-->
+
+    <div id="preloader">
+
+        <div class="loader"></div>
+
+    </div>
+
+
+    <!--========== SCROLL PROGRESS BAR ==========-->
+
+    <div id="progressBar"></div>
+
+
+    <!--========== TOAST NOTIFICATION ==========-->
+
+    <div id="toastContainer"></div>
+
+
+    <!--========== HEADER ==========-->
+
+    <header id="header">
+
+        <div class="container header-container">
+
+            <!-- Logo -->
+
+            <a href="#home"
+               class="logo">
+
+                <i class="fa-solid fa-ticket"></i>
+
+                <span>EventHub</span>
+
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav id="navbar">
+
+                <ul class="nav-links">
+
+                    <li>
+
+                        <a href="#home"
+                           class="active">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#about">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#events">
+
+                            Events
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#booking">
+
+                            Booking
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#history">
+
+                            History
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#contact">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Header Actions -->
+
+            <div class="header-actions">
+
+                <button id="themeToggle"
+                        title="Dark Mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <button id="menuBtn">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+    
+        <!--================ HERO SECTION START ================-->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-container">
+
+            <div class="hero-left">
+
+                <span class="hero-badge">
+
+                    <i class="fa-solid fa-award"></i>
+
+                    India's Trusted Event Booking Platform
+
+                </span>
+
+                <h1>
+
+                    Experience Events
+                    Like Never Before
+
+                </h1>
+
+                <p>
+
+                    Book movie tickets, concerts, sports matches,
+                    stand-up comedy shows and live events in seconds.
+                    Secure booking, instant confirmation and QR tickets.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#events"
+                       class="btn">
+
+                        Explore Events
+
+                    </a>
+
+                    <a href="#booking"
+                       class="btn btn-outline">
+
+                        Book Tickets
+
+                    </a>
+
+                </div>
+
+                <div class="hero-features">
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <span>Secure Booking</span>
+
+                    </div>
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                        <span>Instant Confirmation</span>
+
+                    </div>
+
+                    <div class="feature">
+
+                        <i class="fa-solid fa-qrcode"></i>
+
+                        <span>Digital QR Ticket</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-right">
+
+                <img
+                    src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200"
+                    alt="Live Event">
+
+                <div class="floating-card card-one">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h3>50K+</h3>
+
+                    <p>Happy Customers</p>
+
+                </div>
+
+                <div class="floating-card card-two">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    <h3>750+</h3>
+
+                    <p>Live Events</p>
+
+                </div>
+
+                <div class="floating-card card-three">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <h3>4.9/5</h3>
+
+                    <p>User Rating</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--================ HERO SECTION END ================-->
+
+
+
+    <!--================ STATS SECTION START ================-->
+
+    <section class="stats">
+
+        <div class="container stats-container">
+
+            <div class="stat-box">
+
+                <h2 class="counter"
+                    data-target="50000">
+
+                    0
+
+                </h2>
+
+                <p>
+
+                    Tickets Sold
+
+                </p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2 class="counter"
+                    data-target="750">
+
+                    0
+
+                </h2>
+
+                <p>
+
+                    Events Hosted
+
+                </p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2 class="counter"
+                    data-target="120">
+
+                    0
+
+                </h2>
+
+                <p>
+
+                    Partner Venues
+
+                </p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2 class="counter"
+                    data-target="99">
+
+                    0
+
+                </h2>
+
+                <p>
+
+                    Customer Satisfaction %
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--================ STATS SECTION END ================-->
+
+
+
+    <!--================ ABOUT SECTION START ================-->
+
+    <section id="about"
+             class="about">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Why Choose EventHub?
+
+                </h2>
+
+                <p>
+
+                    Designed with modern technology to provide
+                    the fastest, safest and most enjoyable
+                    ticket booking experience.
+
+                </p>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-card">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <h3>
+
+                        Secure Payment
+
+                    </h3>
+
+                    <p>
+
+                        Your booking information is protected
+                        with secure payment processing.
+
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+
+                    <h3>
+
+                        Digital Tickets
+
+                    </h3>
+
+                    <p>
+
+                        Receive QR Code tickets instantly after
+                        successful booking.
+
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <h3>
+
+                        24×7 Support
+
+                    </h3>
+
+                    <p>
+
+                        Our support team is always available
+                        whenever you need assistance.
+
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <i class="fa-solid fa-gift"></i>
+
+                    <h3>
+
+                        Rewards
+
+                    </h3>
+
+                    <p>
+
+                        Earn reward points and unlock
+                        exclusive discounts.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--================ ABOUT SECTION END ================-->
+    
+        <!--================ EVENTS SECTION START ================-->
+
+    <section class="events"
+             id="events">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Explore Premium Events
+
+                </h2>
+
+                <p>
+
+                    Search, filter and book your favourite events
+                    with just a few clicks.
+
+                </p>
+
+            </div>
+
+            <!--========== SEARCH & FILTER ==========-->
+
+            <div class="event-toolbar">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text"
+                           id="searchInput"
+                           placeholder="Search Events...">
+
+                </div>
+
+                <select id="categoryFilter">
+
+                    <option value="all">
+
+                        All Categories
+
+                    </option>
+
+                    <option value="movie">
+
+                        Movies
+
+                    </option>
+
+                    <option value="concert">
+
+                        Concerts
+
+                    </option>
+
+                    <option value="sports">
+
+                        Sports
+
+                    </option>
+
+                    <option value="comedy">
+
+                        Comedy
+
+                    </option>
+
+                </select>
+
+                <select id="sortEvents">
+
+                    <option value="default">
+
+                        Sort By
+
+                    </option>
+
+                    <option value="priceLow">
+
+                        Price : Low to High
+
+                    </option>
+
+                    <option value="priceHigh">
+
+                        Price : High to Low
+
+                    </option>
+
+                    <option value="date">
+
+                        Upcoming Date
+
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!--========== EVENT GRID ==========-->
+
+            <div class="event-grid"
+                 id="eventGrid">
+
+
+                <!--========== EVENT 1 ==========-->
+
+                <div class="event-card featured movie"
+
+                     data-price="499"
+
+                     data-date="2026-08-02">
+
+                    <span class="badge featured-badge">
+
+                        Featured
+
+                    </span>
+
+                    <button class="wishlist-btn">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800"
+                         alt="Movie">
+
+                    <div class="event-content">
+
+                        <span class="category">
+
+                            Movie
+
+                        </span>
+
+                        <h3>
+
+                            Avengers Endgame
+
+                        </h3>
+
+                        <p>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            PVR Cinema, Delhi
+
+                        </p>
+
+                        <p>
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                            02 Aug 2026
+
+                        </p>
+
+                        <p>
+
+                            <i class="fa-solid fa-users"></i>
+
+                            Seats Left :
+                            <span class="seat-count">
+
+                                150
+
+                            </span>
+
+                        </p>
+
+                        <div class="countdown"
+                             data-countdown="2026-08-02T18:00:00">
+
+                        </div>
+
+                        <div class="price-row">
+
+                            <h2>
+
+                                ₹499
+
+                            </h2>
+
+                            <span>
+
+                                Per Ticket
+
+                            </span>
+
+                        </div>
+
+                        <div class="event-buttons">
+
+                            <button class="preview-btn">
+
+                                Preview
+
+                            </button>
+
+                            <button class="book-btn">
+
+                                Book Now
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--========== EVENT 2 ==========-->
+
+                <div class="event-card concert"
+
+                     data-price="999"
+
+                     data-date="2026-08-10">
+
+                    <span class="badge trending-badge">
+
+                        Trending
+
+                    </span>
+
+                    <button class="wishlist-btn">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800"
+                         alt="Concert">
+
+                    <div class="event-content">
+
+                        <span class="category">
+
+                            Concert
+
+                        </span>
+
+                        <h3>
+
+                            Arijit Singh Live
+
+                        </h3>
+
+                        <p>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Mumbai Arena
+
+                        </p>
+
+                        <p>
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                            10 Aug 2026
+
+                        </p>
+
+                        <p>
+
+                            <i class="fa-solid fa-users"></i>
+
+                            Seats Left :
+                            <span class="seat-count">
+
+                                320
+
+                            </span>
+
+                        </p>
+
+                        <div class="countdown"
+                             data-countdown="2026-08-10T19:30:00">
+
+                        </div>
+
+                        <div class="price-row">
+
+                            <h2>
+
+                                ₹999
+
+                            </h2>
+
+                            <span>
+
+                                Per Ticket
+
+                            </span>
+
+                        </div>
+
+                        <div class="event-buttons">
+
+                            <button class="preview-btn">
+
+                                Preview
+
+                            </button>
+
+                            <button class="book-btn">
+
+                                Book Now
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--========== EVENT 3 ==========-->
+
+                <div class="event-card sports"
+
+                     data-price="799"
+
+                     data-date="2026-08-18">
+
+                    <button class="wishlist-btn">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800"
+                         alt="Sports">
+
+                    <div class="event-content">
+
+                        <span class="category">
+
+                            Sports
+
+                        </span>
+
+                        <h3>
+
+                            India vs Australia
+
+                        </h3>
+
+                        <p>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Narendra Modi Stadium
+
+                        </p>
+
+                        <p>
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                            18 Aug 2026
+
+                        </p>
+
+                        <p>
+
+                            <i class="fa-solid fa-users"></i>
+
+                            Seats Left :
+                            <span class="seat-count">
+
+                                500
+
+                            </span>
+
+                        </p>
+
+                        <div class="countdown"
+                             data-countdown="2026-08-18T16:00:00">
+
+                        </div>
+
+                        <div class="price-row">
+
+                            <h2>
+
+                                ₹799
+
+                            </h2>
+
+                            <span>
+
+                                Per Ticket
+
+                            </span>
+
+                        </div>
+
+                        <div class="event-buttons">
+
+                            <button class="preview-btn">
+
+                                Preview
+
+                            </button>
+
+                            <button class="book-btn">
+
+                                Book Now
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--========== NO RESULT ==========-->
+
+            <div id="noResult">
+
+                <i class="fa-solid fa-face-frown-open"></i>
+
+                <h3>
+
+                    No Events Found
+
+                </h3>
+
+                <p>
+
+                    Try another keyword or category.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--================ EVENTS SECTION END ================-->
+    
+        <!--================ BOOKING SECTION START ================-->
+
+    <section class="booking"
+             id="booking">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Book Your Ticket
+
+                </h2>
+
+                <p>
+
+                    Complete your booking in a few simple steps.
+
+                </p>
+
+            </div>
+
+            <div class="booking-wrapper">
+
+                <!--========== BOOKING FORM ==========-->
+
+                <div class="booking-form-card">
+
+                    <form id="bookingForm">
+
+                        <div class="input-group">
+
+                            <label>
+
+                                Full Name
+
+                            </label>
+
+                            <input type="text"
+                                   id="name"
+                                   placeholder="Enter Your Name"
+                                   required>
+
+                            <small class="error"
+                                   id="nameError"></small>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>
+
+                                Email Address
+
+                            </label>
+
+                            <input type="email"
+                                   id="email"
+                                   placeholder="Enter Email"
+                                   required>
+
+                            <small class="error"
+                                   id="emailError"></small>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>
+
+                                Mobile Number
+
+                            </label>
+
+                            <input type="tel"
+                                   id="mobile"
+                                   placeholder="Enter Mobile Number"
+                                   maxlength="10"
+                                   required>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>
+
+                                Select Event
+
+                            </label>
+
+                            <select id="event">
+
+                                <option value="">
+
+                                    Choose Event
+
+                                </option>
+
+                                <option value="Avengers Endgame"
+                                        data-price="499">
+
+                                    Avengers Endgame
+
+                                </option>
+
+                                <option value="Arijit Singh Live"
+                                        data-price="999">
+
+                                    Arijit Singh Live
+
+                                </option>
+
+                                <option value="India vs Australia"
+                                        data-price="799">
+
+                                    India vs Australia
+
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>
+
+                                Number of Tickets
+
+                            </label>
+
+                            <input type="number"
+                                   id="tickets"
+                                   min="1"
+                                   max="10"
+                                   value="1">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>
+
+                                Promo Code
+
+                            </label>
+
+                            <div class="promo-box">
+
+                                <input type="text"
+                                       id="promoCode"
+                                       placeholder="EVENT10">
+
+                                <button type="button"
+                                        id="applyPromo">
+
+                                    Apply
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <button type="submit"
+                                class="btn book-submit">
+
+                            Confirm Booking
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!--========== BOOKING SUMMARY ==========-->
+
+                <div class="booking-summary">
+
+                    <h3>
+
+                        Booking Summary
+
+                    </h3>
+
+                    <div class="summary-item">
+
+                        <span>
+
+                            Event
+
+                        </span>
+
+                        <strong id="summaryEvent">
+
+                            -
+
+                        </strong>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>
+
+                            Ticket Price
+
+                        </span>
+
+                        <strong id="ticketPrice">
+
+                            ₹0
+
+                        </strong>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>
+
+                            Quantity
+
+                        </span>
+
+                        <strong id="ticketQty">
+
+                            1
+
+                        </strong>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>
+
+                            Discount
+
+                        </span>
+
+                        <strong id="discountPrice">
+
+                            ₹0
+
+                        </strong>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="summary-total">
+
+                        <span>
+
+                            Total
+
+                        </span>
+
+                        <h2 id="totalPrice">
+
+                            ₹0
+
+                        </h2>
+
+                    </div>
+
+                    <div class="secure-payment">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        Secure Checkout
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--================ BOOKING HISTORY ================-->
+
+    <section class="history"
+             id="history">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Booking History
+
+                </h2>
+
+                <p>
+
+                    Your previous bookings will appear here.
+
+                </p>
+
+            </div>
+
+            <div id="historyContainer">
+
+                <div class="empty-history">
+
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    <h3>
+
+                        No Booking Yet
+
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--================ TICKET MODAL ================-->
+
+    <div class="modal"
+         id="ticketModal">
+
+        <div class="modal-content">
+
+            <button id="closeModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+            <h2>
+
+                Booking Successful 🎉
+
+            </h2>
+
+            <p>
+
+                Your ticket has been generated successfully.
+
+            </p>
+
+            <div id="ticketCard">
+
+                <h3 id="ticketEvent">
+
+                    Event Name
+
+                </h3>
+
+                <p id="ticketUser">
+
+                    Name
+
+                </p>
+
+                <p id="ticketEmail">
+
+                    Email
+
+                </p>
+
+                <p id="ticketBookingId">
+
+                    Booking ID
+
+                </p>
+
+                <div id="qrCode"></div>
+
+            </div>
+
+            <div class="ticket-actions">
+
+                <button id="downloadTicket"
+                        class="btn">
+
+                    Download Ticket
+
+                </button>
+
+                <button id="printTicket"
+                        class="btn btn-outline">
+
+                    Print
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--================ BOOKING SECTION END ================-->
+    
+        <!--================ CONTACT SECTION START ================-->
+
+    <section class="contact"
+             id="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Contact Us
+
+                </h2>
+
+                <p>
+
+                    We'd love to hear from you. Reach out for any
+                    questions, feedback or partnership opportunities.
+
+                </p>
+
+            </div>
+
+            <div class="contact-wrapper">
+
+                <div class="contact-info">
+
+                    <div class="info-card">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+
+                            <h3>
+
+                                Address
+
+                            </h3>
+
+                            <p>
+
+                                New Delhi, India
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <div>
+
+                            <h3>
+
+                                Phone
+
+                            </h3>
+
+                            <p>
+
+                                +91 98765 43210
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+
+                            <h3>
+
+                                Email
+
+                            </h3>
+
+                            <p>
+
+                                support@eventhub.com
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <form id="contactForm">
+
+                    <input type="text"
+                           id="contactName"
+                           placeholder="Your Name"
+                           required>
+
+                    <input type="email"
+                           id="contactEmail"
+                           placeholder="Your Email"
+                           required>
+
+                    <textarea id="contactMessage"
+                              rows="6"
+                              placeholder="Your Message"
+                              required></textarea>
+
+                    <button class="btn"
+                            type="submit">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--================ FAQ =================-->
+
+    <section class="faq">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Frequently Asked Questions
+
+                </h2>
+
+            </div>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        How do I receive my ticket?
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+
+                            Your QR Ticket is generated instantly
+                            after successful booking.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        Can I cancel my booking?
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+
+                            Yes. Cancellation is available before
+                            the event starts.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+
+                        Which payment methods are supported?
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+
+                            Cards, UPI, Net Banking and Wallets.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--================ TESTIMONIALS =================-->
+
+    <section class="testimonials">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    What Our Customers Say
+
+                </h2>
+
+            </div>
+
+            <div class="testimonial-slider">
+
+                <div class="testimonial-card">
+
+                    <p>
+
+                        "Amazing booking experience. Super fast and
+                        easy to use."
+
+                    </p>
+
+                    <h4>
+
+                        Rahul Sharma
+
+                    </h4>
+
+                </div>
+
+                <div class="testimonial-card">
+
+                    <p>
+
+                        "Loved the QR ticket feature and instant
+                        confirmation."
+
+                    </p>
+
+                    <h4>
+
+                        Priya Verma
+
+                    </h4>
+
+                </div>
+
+                <div class="testimonial-card">
+
+                    <p>
+
+                        "Best event booking website I've ever used."
+
+                    </p>
+
+                    <h4>
+
+                        Aman Singh
+
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--================ NEWSLETTER =================-->
+
+    <section class="newsletter">
+
+        <div class="container newsletter-box">
+
+            <div>
+
+                <h2>
+
+                    Subscribe Newsletter
+
+                </h2>
+
+                <p>
+
+                    Get updates about upcoming events and offers.
+
+                </p>
+
+            </div>
+
+            <form id="newsletterForm">
+
+                <input type="email"
+                       id="newsletterEmail"
+                       placeholder="Enter Email">
+
+                <button class="btn">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!--================ FOOTER =================-->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <div class="footer-box">
+
+                <h2>
+
+                    EventHub
+
+                </h2>
+
+                <p>
+
+                    Premium event booking platform with secure
+                    booking and digital ticket management.
+
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#events">Events</a></li>
+
+                    <li><a href="#booking">Booking</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>
+
+                    Follow Us
+
+                </h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © <span id="year"></span> EventHub.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!--================ SCROLL TO TOP =================-->
+
+    <button id="scrollTop">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <!--================ JS LIBRARIES =================-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+    <!--================ MAIN JS =================-->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
