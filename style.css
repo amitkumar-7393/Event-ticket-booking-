@@ -2400,12 +2400,13 @@ footer{
 
 
 body.dark .floating-card{
-    color:#ffffff;
+    background:rgba(255,255,255,.92);
+    color:#0f172a;
 }
 
 body.dark .floating-card h3,
 body.dark .floating-card p,
-body.dark .floating-card span{
-    color:#ffffff;
+body.dark .floating-card span,
+body.dark .floating-card i{
+    color:#0f172a;
 }
-
