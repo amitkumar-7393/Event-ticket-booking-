@@ -748,7 +748,7 @@ body.dark #header{
 
     backdrop-filter:blur(15px);
 
-    color:var(--text);
+    color: #0f172a;
 
     padding:18px;
 
@@ -757,6 +757,12 @@ body.dark #header{
     box-shadow:var(--shadow);
 
     animation:floatCard 4s ease-in-out infinite;
+    .floating-card h3,
+.floating-card p,
+.floating-card span{
+    color:#0f172a;
+}
+    
 
 }
 
@@ -2390,5 +2396,16 @@ footer{
 
     }
 
+}
+
+
+body.dark .floating-card{
+    color:#ffffff;
+}
+
+body.dark .floating-card h3,
+body.dark .floating-card p,
+body.dark .floating-card span{
+    color:#ffffff;
 }
 
