@@ -741,29 +741,33 @@ body.dark #header{
 }
 
 .floating-card{
-
     position:absolute;
-
     background:rgba(255,255,255,.92);
-
     backdrop-filter:blur(15px);
-
-    color: #0f172a;
-
+    color:#0f172a;
     padding:18px;
-
     border-radius:18px;
-
     box-shadow:var(--shadow);
-
     animation:floatCard 4s ease-in-out infinite;
-    .floating-card h3,
+}
+
+.floating-card h3,
 .floating-card p,
-.floating-card span{
+.floating-card span,
+.floating-card i{
     color:#0f172a;
 }
-    
 
+body.dark .floating-card{
+    background:rgba(255,255,255,.92);
+    color:#0f172a;
+}
+
+body.dark .floating-card h3,
+body.dark .floating-card p,
+body.dark .floating-card span,
+body.dark .floating-card i{
+    color:#0f172a;
 }
 
 .card-one{
@@ -2404,9 +2408,11 @@ body.dark .floating-card{
     color:#0f172a;
 }
 
-body.dark .floating-card h3,
-body.dark .floating-card p,
-body.dark .floating-card span,
-body.dark .floating-card i{
-    color:#0f172a;
-}
+
+body.dark .floating-card h3,  
+body.dark .floating-card p,  
+body.dark .floating-card span,  
+body.dark .floating-card i{  
+    color:#0f172a;  
+}  
+  
